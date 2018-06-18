@@ -1,0 +1,345 @@
+%matplotlib inline
+
+import csv
+f = open('foreign.csv')
+data = csv.reader(f)
+data = list(data)
+
+관광 = []
+상 = []
+공 = []
+유 = []
+for row in data :
+    if row[1] == '아시아주' : 
+       
+        관광.append(int(row[3]))
+        상.append(int(row[4]))
+        공.append(int(row[5]))
+        유.append(int(row[6]))
+        
+import matplotlib.pyplot as plt
+plt.figure(dpi = 300)
+plt.rc('font', family='Malgun Gothic')
+
+
+plt.plot(관광, label = '관광')
+plt.plot(상, label = '상용')
+plt.plot(공, label = '공용')
+plt.plot(유, label = '유학/연수')
+plt.legend()
+
+plt.title('아시아주 외국인 방문목적별 입국 현황')
+
+plt.xlabel('연도')
+plt.ylabel('외국인 방문 수')
+
+plt.xticks(range(11), ['2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'])
+
+plt.show()
+
+관광 = []
+상 = []
+공 = []
+유 = []
+for row in data :
+    if row[1] == '미주' : 
+ 
+        관광.append(int(row[3]))
+        상.append(int(row[4]))
+        공.append(int(row[5]))
+        유.append(int(row[6]))
+        
+plt.figure(dpi = 300)
+
+plt.plot(관광, label = '관광')
+plt.plot(상, label = '상용')
+plt.plot(공, label = '공용')
+plt.plot(유, label = '유학/연수')
+plt.legend()
+
+plt.title('미주 외국인 방문목적별 입국 현황')
+
+plt.xlabel('연도')
+plt.ylabel('외국인 방문 수')
+
+plt.xticks(range(11), ['2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'])
+
+plt.show()
+        
+
+관광 = []
+상 = []
+공 = []
+유 = []
+for row in data :
+    if row[1] == '구주' : 
+ 
+        관광.append(int(row[3]))
+        상.append(int(row[4]))
+        공.append(int(row[5]))
+        유.append(int(row[6]))
+        
+plt.figure(dpi = 300)
+
+plt.plot(관광, label = '관광')
+plt.plot(상, label = '상용')
+plt.plot(공, label = '공용')
+plt.plot(유, label = '유학/연수')
+plt.legend()
+
+plt.title('구주 외국인 방문목적별 입국 현황')
+
+plt.xlabel('연도')
+plt.ylabel('외국인 방문 수')
+
+plt.xticks(range(11), ['2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'])
+
+plt.show()
+
+
+관광 = []
+상 = []
+공 = []
+유 = []
+for row in data :
+    if row[1] == '대양주' : 
+
+        관광.append(int(row[3]))
+        상.append(int(row[4]))
+        공.append(int(row[5]))
+        유.append(int(row[6]))
+
+plt.figure(dpi = 300)
+
+plt.plot(관광, label = '관광')
+plt.plot(상, label = '상용')
+plt.plot(공, label = '공용')
+plt.plot(유, label = '유학/연수')
+plt.legend()
+
+plt.title('대양주 외국인 방문목적별 입국 현황')
+
+plt.xlabel('연도')
+plt.ylabel('외국인 방문 수')
+
+plt.xticks(range(11), ['2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'])
+
+plt.show()
+
+
+관광 = []
+상 = []
+공 = []
+유 = []
+for row in data :
+    if row[1] == '아프리카' : 
+
+        관광.append(int(row[3]))
+        상.append(int(row[4]))
+        공.append(int(row[5]))
+        유.append(int(row[6]))
+
+plt.figure(dpi = 300)
+
+plt.plot(관광, label = '관광')
+plt.plot(상, label = '상용')
+plt.plot(공, label = '공용')
+plt.plot(유, label = '유학/연수')
+plt.legend()
+
+plt.title('아프리카 외국인 방문목적별 입국 현황')
+
+plt.xlabel('연도')
+plt.ylabel('외국인 방문 수')
+
+plt.xticks(range(11), ['2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'])
+
+plt.show()
+
+import csv
+f = open('외국인 연령별.csv')
+data = csv.reader(f)
+data = list(data)
+
+
+소년 = []
+청년 = []
+중년= []
+장년 = []
+노년 = []
+노인 = []
+for row in data :
+    if row[1] == '아시아주' : 
+        
+        소년.append(int(row[3]))
+        청년.append(int(row[4]))
+        중년.append(int(row[5]))
+        장년.append(int(row[6]))
+        노년.append(int(row[7]))
+        노인.append(int(row[8]))
+        
+import matplotlib.pyplot as plt
+plt.figure(dpi = 300)
+plt.rc('font', family='Malgun Gothic')
+
+
+plt.plot(소년, label = '0~20세')
+plt.plot(청년, label = '21~30세')
+plt.plot(중년, label = '31~40세')
+plt.plot(장년, label = '41~50세')
+plt.plot(노년, label = '51~60세')
+plt.plot(노인, label = '60세 이상')
+plt.legend()
+
+plt.title('아시아주 외국인 연령별 입국 현황')
+
+plt.xlabel('연도')
+plt.ylabel('외국인 방문 수')
+
+plt.xticks(range(11), ['2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'])
+
+plt.show()
+
+
+소년 = []
+청년 = []
+중년= []
+장년 = []
+노년 = []
+노인 = []
+for row in data :
+    if row[1] == '미주' : 
+      
+        소년.append(int(row[3]))
+        청년.append(int(row[4]))
+        중년.append(int(row[5]))
+        장년.append(int(row[6]))
+        노년.append(int(row[7]))
+        노인.append(int(row[8]))
+
+plt.figure(dpi = 300)
+
+plt.plot(소년, label = '0~20세')
+plt.plot(청년, label = '21~30세')
+plt.plot(중년, label = '31~40세')
+plt.plot(장년, label = '41~50세')
+plt.plot(노년, label = '51~60세')
+plt.plot(노인, label = '60세 이상')
+plt.legend()
+
+plt.title('미주 외국인 연령별 입국 현황')
+
+plt.xlabel('연도')
+plt.ylabel('외국인 방문 수')
+
+plt.xticks(range(11), ['2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'])
+
+plt.show()
+
+
+소년 = []
+청년 = []
+중년= []
+장년 = []
+노년 = []
+노인 = []
+for row in data :
+    if row[1] == '구주' : 
+      
+        소년.append(int(row[3]))
+        청년.append(int(row[4]))
+        중년.append(int(row[5]))
+        장년.append(int(row[6]))
+        노년.append(int(row[7]))
+        노인.append(int(row[8]))
+
+plt.figure(dpi = 300)
+
+plt.plot(소년, label = '0~20세')
+plt.plot(청년, label = '21~30세')
+plt.plot(중년, label = '31~40세')
+plt.plot(장년, label = '41~50세')
+plt.plot(노년, label = '51~60세')
+plt.plot(노인, label = '60세 이상')
+plt.legend()
+
+plt.title('구주 외국인 연령별 입국 현황')
+
+plt.xlabel('연도')
+plt.ylabel('외국인 방문 수')
+
+plt.xticks(range(11), ['2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'])
+
+plt.show()
+
+
+소년 = []
+청년 = []
+중년= []
+장년 = []
+노년 = []
+노인 = []
+for row in data :
+    if row[1] == '대양주' : 
+        
+        소년.append(int(row[3]))
+        청년.append(int(row[4]))
+        중년.append(int(row[5]))
+        장년.append(int(row[6]))
+        노년.append(int(row[7]))
+        노인.append(int(row[8]))
+
+plt.figure(dpi = 300)
+
+plt.plot(소년, label = '0~20세')
+plt.plot(청년, label = '21~30세')
+plt.plot(중년, label = '31~40세')
+plt.plot(장년, label = '41~50세')
+plt.plot(노년, label = '51~60세')
+plt.plot(노인, label = '60세 이상')
+plt.legend()
+
+plt.title('대양주 외국인 연령별 입국 현황')
+
+plt.xlabel('연도')
+plt.ylabel('외국인 방문 수')
+
+plt.xticks(range(11), ['2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'])
+
+plt.show()
+
+
+소년 = []
+청년 = []
+중년= []
+장년 = []
+노년 = []
+노인 = []
+for row in data :
+    if row[1] == '아프리카' : 
+      
+        소년.append(int(row[3]))
+        청년.append(int(row[4]))
+        중년.append(int(row[5]))
+        장년.append(int(row[6]))
+        노년.append(int(row[7]))
+        노인.append(int(row[8]))
+
+plt.figure(dpi = 300)
+
+plt.plot(소년, label = '0~20세')
+plt.plot(청년, label = '21~30세')
+plt.plot(중년, label = '31~40세')
+plt.plot(장년, label = '41~50세')
+plt.plot(노년, label = '51~60세')
+plt.plot(노인, label = '60세 이상')
+plt.legend()
+
+plt.title('아프리카 외국인 연령별 입국 현황')
+
+plt.xlabel('연도')
+plt.ylabel('외국인 방문 수')
+
+plt.xticks(range(11), ['2007','2008','2009','2010','2011','2012','2013','2014','2015','2016','2017'])
+
+plt.show()
